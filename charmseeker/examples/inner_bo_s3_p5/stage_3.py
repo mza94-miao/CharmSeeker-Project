@@ -8,7 +8,7 @@ from multiprocessing.pool import ThreadPool
 
 config = botocore.config.Config(connect_timeout=900, read_timeout=900, retries={'max_attempts': 0})
 client = boto3.client('lambda', config=config)
-function_name = 'pipe-alpr'
+function_name = 'pipe-alpr-p'
 time_out = 900
 total_workload = 3376
 
